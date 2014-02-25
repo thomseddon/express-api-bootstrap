@@ -1,5 +1,5 @@
 
-# Express API Bootstrap
+# Express API Bootstrap [![Build Status](https://travis-ci.org/thomseddon/express-api-bootstrap.png?branch=master)](https://travis-ci.org/thomseddon/express-api-bootstrap)
 
 This is just a bootstrap of how I build API projects with express, abstracted to easy reuse.
 
@@ -15,7 +15,7 @@ Includes:
 
 ## Author
 
-(Thom Seddon)[https://twitter.com/ThomSeddon]
+[Thom Seddon](https://twitter.com/ThomSeddon)
 
 ## License
 
