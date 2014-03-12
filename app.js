@@ -51,8 +51,8 @@ app.configure('development', function () {
  * Routes
  */
 
-app.get('/v1/tests/:id', routes.test.get);
-app.get('/v1/tests', routes.test.list);
+app.get('/v1/tests/:id', routes.tests.get);
+app.get('/v1/tests', routes.tests.list);
 
 /**
  * Error Handling
