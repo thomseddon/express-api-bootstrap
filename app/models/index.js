@@ -3,4 +3,4 @@
  * Expose siblings
  */
 
-module.exports = require('../lib/expose')(__filename);
+module.exports = require('exposer')(__filename);
