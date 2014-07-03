@@ -7,7 +7,6 @@ var errorHandler = require('./lib/errorHandler');
 var routes = require('./lib/routes');
 var express = require('express');
 var database = require('congo');
-// var chatty = require('chatty'); // node-syslog is broken
 
 /**
  * Init express
@@ -26,8 +25,6 @@ app.configure(function () {
   app.use(express.urlencoded());
   app.use(express.methodOverride());
 
-  // chatty.configure({ ident: 'this.domain.com' });
-
   database.configure({
     host: process.env.MONGO_HOST || 'localhost',
     name: process.env.MONGO_DB || 'test',
@@ -39,12 +36,11 @@ app.configure(function () {
 });
 
 app.configure('production', function () {
-  // app.use(express.logger({ stream: chatty.stream() }));
+  app.use(express.logger());
 });
 
 app.configure('development', function () {
   app.use(express.logger('dev'));
-  // chatty.configure({ console: true });
 });
 
 /**
