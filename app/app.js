@@ -4,7 +4,7 @@
  */
 
 var errorHandler = require('./lib/errorHandler');
-var routes = require('./lib/routes');
+var routes = require('./routes');
 var express = require('express');
 var database = require('congo');
 

@@ -3,7 +3,7 @@
  * Module dependencies
  */
 
-var app = require('./app.js');
+var app = require('./app/app');
 
 /**
  * Start server

@@ -9,7 +9,7 @@ var ObjectID = database.ObjectID;
 describe('tests', function () {
 
   before(function () {
-    request = request(require(__dirname + '/../app'));
+    request = request(require(__dirname + '/../app/app'));
   });
 
   describe('list', function () {

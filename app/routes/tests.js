@@ -3,8 +3,8 @@
  * Module dependencies
  */
 
+var error = require('../lib/error');
 var async = require('async');
-var error = require('../error');
 var models = require('../models');
 
 /**
